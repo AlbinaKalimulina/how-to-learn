@@ -9,11 +9,36 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* Шапка сайта */
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color:#f2f2f2;
+  display: flex;
+  position: relative;
+}
+
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  margin-left: 64px;
+  margin-top: 30px;
+}
+
+.header__link {
+
+}
+
+.header__main-illustration {
+  background-image: url(../images/header-image.png);
+
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -22,10 +47,80 @@
   width: 568px;
 }
 
+/* Секция Главные проблемы в обучении */
+.description {
+
+}
+
+.two-columns {
+
+}
+
+.two-columns__brief {
+
+}
+
+.two-columns__main-text {
+
+}
+
+.two-columns__paragraph {
+
+}
+
+/* Секция блок digits */
+.digits {
+
+}
+
+.digits__section-title {
+
+}
+
+.digits__section-subtitle {
+
+}
+
+.table {
+
+}
+
+/*  Секция блок feynmen */
+.feynman {
+  background-image: url(../images/feynman.png);
+
+}
+
+.feynman__title {
+
+}
+
+.feynman__subtitle {
+
+}
+
+.feynman__link {
+
+}
+
+.feynman__main-illustration {
+
+}
+
+/* Секция блок kaufman */
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+/* Подвал сайта */
+.footer {
+
+}
+.footer__logo {
+
 }
