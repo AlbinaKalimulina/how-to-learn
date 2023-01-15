@@ -18,11 +18,26 @@
   background-color:#f2f2f2;
   display: flex;
   position: relative;
+  border: 1px solid red;
+}
+
+.logo {
+  width: 228px;
+  height: 32px;
+  image: url(../images/logo_place_header.svg);
+}
+  
+.logo_place_header {
+  position: absolute;
+  margin-left: 64px;
 }
 
 .header__title {
   width: 730px;
   margin-left: 64px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
 }
 
 .header__subtitle {
@@ -30,6 +45,9 @@
   position: absolute;
   margin-left: 64px;
   margin-top: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .header__link {
@@ -38,18 +56,24 @@
 
 .header__main-illustration {
   background-image: url(../images/header-image.png);
-
+  position: absolute;
+  right: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  position: absolute;
+  top: 64px;
+  right: 0;
   height: 568px;
   width: 568px;
+  background: #2f80ed;
 }
 
 /* Секция Главные проблемы в обучении */
 .description {
-
+  display: flex;
+  border: 1px solid red;
 }
 
 .two-columns {
@@ -68,27 +92,74 @@
 
 }
 
+.two-columns__span-accent {
+
+}
+
 /* Секция блок digits */
 .digits {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  border: 1px solid red;
 }
 
 .digits__section-title {
-
+  width: 60%;
+  text-align: center;
+  height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
 }
 
 .digits__section-subtitle {
-
+  width: 60%; 
+  text-align: center;
+  height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  border: 1px solid red;
+}
 
+.tabel__cell {
+  width: 250px;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0
+}
+
+.tabel__heading {
+  height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.tabel__text {
+  height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 /*  Секция блок feynmen */
 .feynman {
   background-image: url(../images/feynman.png);
-
+  display: flex;
+  border: 1px solid red;
 }
 
 .feynman__title {
@@ -108,7 +179,20 @@
 }
 
 /* Секция блок kaufman */
+.kaufman {
 
+}
+
+.section-title__theme_dark {
+ 
+}
+
+.section-subtitle__theme_dark {
+  
+}
+.table__theme_dark {
+
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -117,9 +201,22 @@
   margin-top: 80px;
 }
 
+.tabel__heading_theme_dark {
+
+}
+
+.tabel__text_theme_dark {
+
+}
+
+.kaufman__triangle {
+  color: #2f80ed;
+}
+
 /* Подвал сайта */
 .footer {
-
+  display: flex;
+  border: 1px solid red;
 }
 .footer__logo {
 
