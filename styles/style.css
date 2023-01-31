@@ -26,7 +26,6 @@
   height: 32px;
   top: 30px;
   margin-left: 64px;
-  top: 30px;
 }
 
 .header__title {
@@ -236,7 +235,6 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 90px;
-  overflow:hidden;
 }
 
 .section-title__theme_dark {
