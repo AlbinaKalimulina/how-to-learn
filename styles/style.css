@@ -52,7 +52,6 @@
 }
 
 .header__link {
-  position: absolute;
   color:#2f80ed;
   text-decoration: none;
 }
@@ -237,7 +236,7 @@
   padding-bottom: 90px;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
@@ -249,7 +248,7 @@
   z-index: 2;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -288,7 +287,7 @@
   margin-top: 20px;
 }
 
-.kaufman__triangle_theme_dark {
+.kaufman__triangle {
   position: absolute;
   z-index: 1;
   right: -210px;
@@ -298,27 +297,27 @@
 
 /* Подвал сайта */
 .footer {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: #1f1f1f;
   min-height: 350px;
+  color: white;
 }
 
 .footer__columns {
   display: flex;
   flex-direction: row;
-  position: relative;
-  width: 90%;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%;
+  margin: 60px auto 40px;
   min-height: 350px;
 }
 
 .footer__column_content_copyright {
   display: flex;
   flex-basis: 711px;
-  justify-content: space-between;
+  margin: 0;
 }
 
 .logo_place_footer {
@@ -326,37 +325,41 @@
   height: 32px;
 }
 
-.footer__author{
-  position: absolute;
-  display: flex;
-  padding-bottom: 18px;
-  padding-top: 18px;
+.footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  bottom: 0;
-  color: white;
+  margin-bottom: 18px;
+  margin-top: auto;
 }
 
 .footer__column {
-  margin-top: 0;
-  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0; 
 }
 
 .footer__column-heading{
-  display: flex;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 20px;
-  margin-top: 0;
-  color: white;
+  margin: 0;
 }
 
 .footer__column-links {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+  margin-top: 20px;
   margin-bottom: 16px;
   padding-left: 0;
   list-style: none; /* Убираем маркеры */
@@ -365,17 +368,14 @@
 } 
 
 .footer__column-link {
-  padding-left: 0;
-  margin-left: 0;
+  margin: 0;
   list-style: none; /* Убираем маркеры */
   text-decoration: none;
   color: white;
 }
 
 .footer__social-icon{
-  position: relative;
   margin-right: 10px;
-  flex-direction: column;
   width: 16px;
   height: 16px;
 }
