@@ -359,6 +359,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  min-height: 250px;
 }
 
 .footer__column_content_info {
