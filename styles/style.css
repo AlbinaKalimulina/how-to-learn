@@ -166,8 +166,6 @@
   justify-content: space-between;
   align-items: stretch;
   width: 1100px;
-  margin-top: 0;
-  padding-left: 0;
 }
 
 .table__cell {
@@ -213,7 +211,6 @@
   margin-right: auto;
   margin-bottom: 70px;
   z-index: 2;
-  margin-top: 100px;
 }
 
 .feynman__subtitle {
@@ -223,7 +220,6 @@
   font-weight: normal;
   text-align: center;
   z-index: 1;
-  margin-top: 100px;
 }
 
 .feynman__link {
@@ -235,7 +231,6 @@
   top: 50%;
   text-decoration: none;
   color: #2f80ed;
-  margin-top: 100px;
 }
 
 
@@ -319,6 +314,7 @@
 /* Подвал сайта */
 .footer {
   display: flex;
+  flex-direction: column;
   background-color: #1f1f1f;
   min-height: 350px;
   color: white;
@@ -336,9 +332,10 @@
 }
 
 .footer__column_content_copyright {
-  margin: 0;
   display: flex;
   flex-basis: 711px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo_place_footer {
@@ -347,18 +344,18 @@
 }
 
 .footer__author {
+  display: flex;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 18px;
-  margin-top: auto;
+  margin-top: 18px;
+  bottom: 0;
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   min-height: 250px;
 }
 
@@ -399,8 +396,7 @@
 
 .footer__column-link {
   margin: 0;
-  list-style: none;
-  /* Убираем маркеры */
+  list-style: none; /* Убираем маркеры */
   text-decoration: none;
   color: white;
   margin-top: 20px;
@@ -410,6 +406,6 @@
 .footer__social-icon {
   margin-right: 10px;
   width: 16px;
-  height: 16px;
+  height: 16px; 
 }
 
