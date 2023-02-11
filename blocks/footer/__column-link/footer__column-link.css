@@ -1,0 +1,15 @@
+.footer__column-link {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 18px;
+    transition: opacity 0.3s ease;
+    color: white;
+  }
+  
+  .footer__column-link:hover {
+    opacity: 0.5;
+  }
+
+  

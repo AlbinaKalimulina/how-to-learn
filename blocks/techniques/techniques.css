@@ -1,0 +1,10 @@
+/* Секция Техники обучения */
+.techniques {
+  margin: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}

@@ -1,0 +1,12 @@
+@import url(./__iframe/video__iframe.css);
+@import url(./__iframes/video__iframes.css);
+
+/* Секция Видео */
+.video {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto -100px;
+}
